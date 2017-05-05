@@ -60,7 +60,7 @@ void matrix::show()
 	{
 		for(int j = 0 ; j < col ; j++)
 		{
-			std::cout << mat[i][j] << " ";
+			printf("%9.6f ", mat[i][j]);
 		}
 		std::cout << "\n";
 	}
@@ -135,7 +135,7 @@ matrix matrix::operator*(matrix m)
 matrix matrix::transpose()
 {
 	
-	matrix a(3,3);
+	matrix a(row,col);
 
 	for(int i = 0 ; i < row ; i++)
 	{
